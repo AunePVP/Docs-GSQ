@@ -1,4 +1,4 @@
-# Main Page
+# Screenshots
 
 {% tabs %}
 {% tab title="Main Page" %}
@@ -23,4 +23,3 @@
 ![](https://user-images.githubusercontent.com/67545895/171194221-d1a34234-bab7-47e6-b50b-f96f67afd9c7.PNG)
 {% endtab %}
 {% endtabs %}
-
