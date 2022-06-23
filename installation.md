@@ -1,5 +1,7 @@
 # Installation
 
+{% tabs %}
+{% tab title="Use the installer" %}
 ### Use the installer
 
 Copy this into your Terminal and press enter.
@@ -10,12 +12,14 @@ bash <(curl -s https://raw.githubusercontent.com/AunePVP/Game-Server-Query-and-C
 
 Navigate with your arrow keys and press enter to submit. To focus `<Ok>` or `<Cancel>`, press tab.\
 After completing all steps, move to [Web configuration.](https://github.com/AunePVP/Game-Server-Query-and-Control-Center/wiki/Installation#web-configuration)
+{% endtab %}
 
-
-
+{% tab title="Manual Installation Guide" %}
 ### Manual installation guide
 
-**Replace everything between `<` and `>` e.g. **_**(\</path/to/web-server/> to /var/www/tracker)**_
+{% hint style="info" %}
+Replace everything between `<` and `>` e.g. _(\</path/to/web-server/> to /var/www/tracker)_
+{% endhint %}
 
 Make sure, you have everything required installed.
 
@@ -106,8 +110,10 @@ Exit mysql
 exit
 ```
 
-Now continue with the web configuration\
-\
+After completing all steps, move to [Web configuration.](https://github.com/AunePVP/Game-Server-Query-and-Control-Center/wiki/Installation#web-configuration)
+{% endtab %}
+{% endtabs %}
+
 
 
 ### Web configuration
@@ -117,13 +123,12 @@ Go to your Webbrowser and type in your Domain/IP. If your website is stored in a
 Enter your Steam Web API Key, and your Database credentials. Test the connection. If the connection succeed, click on submit.
 
 Now your going to create an admin user. Enter a secure password and click on submit. You get redirected to the start page.\
-Click on _Login_ in the top right corner.\
+Click on _Login_ in the top right corner.
+
+{% hint style="warning" %}
+If you're trying to add a Minecraft Server and your server doesn't support the query protocol, use 0 as query port.
+{% endhint %}
+
 After logging in click on the user avatar in the top right corner and click on Server in in the left.\
 Click on Add a server and fill out the form. If Rcon is disabled, use 0 as Rcon Port.
 
-**IMPORTANT!**\
-If you're trying to add a Minecraft Server and your server doesn't support the query protocol, use 0 as query port.
-
-### Cronjob
-
-type crontab -e and insert this line: `* * * * * cd /path/to/directory/query/&& php -f cron.php > /dev/null 2>&1`
