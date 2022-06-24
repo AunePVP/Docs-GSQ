@@ -58,8 +58,8 @@ find Game-Server-Query-and-Control-Center/html/type/arkse/ -type f -exec chmod 6
 Determine the user the web server is running as. (most likely **www-data**) Give the web server access to the files and set the correct permissions for the config file.
 
 ```shell
-sudo chown -R $USER:<webserverusername> <nameofdirectory>
-sudo chown <webserverusername>:$USER html/config.php
+sudo chown -R $USER:<webserverusername> Game-Server-Query-and-Control-Center
+sudo chown <webserverusername>:$USER Game-Server-Query-and-Control-Center/html/config.php
 sudo chmod 640 Game-Server-Query-and-Control-Center/html/config.php
 ```
 
