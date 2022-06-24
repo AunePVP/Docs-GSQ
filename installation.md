@@ -52,7 +52,7 @@ Set the correct permissions for the files
 ```shell
 find Game-Server-Query-and-Control-Center -type d -exec chmod 770 {} \;
 find Game-Server-Query-and-Control-Center -type f -exec chmod 640 {} \;
-find <Game-Server-Query-and-Control-Center/html/type/arkse/ -type f -exec chmod 660 {} \;
+find Game-Server-Query-and-Control-Center/html/type/arkse/ -type f -exec chmod 660 {} \;
 ```
 
 Determine the user the web server is running as. (most likely **www-data**) Give the web server access to the files and set the correct permissions for the config file.
