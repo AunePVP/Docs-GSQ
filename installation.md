@@ -44,15 +44,15 @@ git clone https://github.com/AunePVP/Game-Server-Query-and-Control-Center
 Create a config file
 
 ```shell
-echo "<?php" > <nameofdirectory/>html/config.php
+echo "<?php" > Game-Server-Query-and-Control-Center/html/config.php
 ```
 
 Set the correct permissions for the files
 
 ```shell
-find <nameofdirectory> -type d -exec chmod 770 {} \;
-find <nameofdirectory> -type f -exec chmod 640 {} \;
-find <nameofdirectory>/html/type/arkse/ -type f -exec chmod 660 {} \;
+find Game-Server-Query-and-Control-Center -type d -exec chmod 770 {} \;
+find Game-Server-Query-and-Control-Center -type f -exec chmod 640 {} \;
+find <Game-Server-Query-and-Control-Center/html/type/arkse/ -type f -exec chmod 660 {} \;
 ```
 
 Determine the user the web server is running as. (most likely **www-data**) Give the web server access to the files and set the correct permissions for the config file.
@@ -60,14 +60,14 @@ Determine the user the web server is running as. (most likely **www-data**) Give
 ```shell
 sudo chown -R $USER:<webserverusername> <nameofdirectory>
 sudo chown <webserverusername>:$USER html/config.php
-sudo chmod 640 <nameofdirectory>/html/config.php
+sudo chmod 640 Game-Server-Query-and-Control-Center/html/config.php
 ```
 
 If you don't want to run the web app in it's on directory (https://yourdomain.com/Game-Server-Query-and-Control-Center-1.0.0-alpha/index.php), move every file and directory into the current folder.
 
 ```shell
-mv <nameofdirectory>/* .
-rm -r <nameofdirectory>;
+mv Game-Server-Query-and-Control-Center/* .
+rm -r Game-Server-Query-and-Control-Center;
 ```
 
 **Create database**
