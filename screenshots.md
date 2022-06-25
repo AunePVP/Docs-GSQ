@@ -9,6 +9,8 @@
 ![](https://user-images.githubusercontent.com/67545895/172096676-4c295629-7f27-4872-a97f-8699b18cb883.png)
 
 ![](https://user-images.githubusercontent.com/67545895/172097322-79c7bf6c-e4bb-470a-9dd2-38902d54d1c7.jpg)
+
+![](<.gitbook/assets/Screen Shot 2022-06-24 at 21.43.21.png>)
 {% endtab %}
 
 {% tab title="Control Panel" %}
