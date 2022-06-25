@@ -13,3 +13,4 @@
 
 * [Update](update.md)
 * [Screenshots](screenshots.md)
+* [Settings](settings.md)
