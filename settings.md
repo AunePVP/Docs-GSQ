@@ -7,3 +7,7 @@ Steam has a big web API. To use the API, you'll need an API key. You can create 
 #### RustMaps.com API Key
 
 This API Key is optional and is used to generate the map image of Rust Game Servers. You can generate the map from their website too. [link](https://rustmaps.com/)
+
+#### Registration
+
+Allow/deny registration of new users.
