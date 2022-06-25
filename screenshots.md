@@ -16,6 +16,8 @@
 {% tab title="Control Panel" %}
 ![](https://user-images.githubusercontent.com/67545895/174536459-9d572553-9d13-4c81-85dc-0fa38b0b4fd2.png)
 
+![](<.gitbook/assets/Screen Shot 2022-06-25 at 16.52.19.png>)
+
 ![](https://user-images.githubusercontent.com/67545895/174536529-6b2806a1-efa2-4a26-bfd5-eb81bd33a25f.png)
 {% endtab %}
 
