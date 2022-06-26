@@ -1,5 +1,14 @@
 # Installation
 
+Make sure, you have **everything** required installed.
+
+* Webserver `nginx -v` or `apache2 -v`
+* PHP (7.4 or newer) `php -v`
+* php-mbstring `php -m`
+* Git `git --version`
+* Mysql `mysql --version`
+* Curl `curl --version`
+
 {% tabs %}
 {% tab title="Use the installer" %}
 ### Use the installer
@@ -21,13 +30,7 @@ After completing all steps, move to [Web configuration.](https://github.com/Aune
 Replace everything between `<` and `>` e.g. _(\</path/to/web-server/> to /var/www/tracker)_
 {% endhint %}
 
-Make sure, you have everything required installed.
 
-* Webserver `nginx -v` or `apache2 -v`
-* PHP (7.4 or newer) `php -v`
-* php-mbstring `php -m`
-* Git `git --version`
-* Mysql `mysql --version`
 
 **Download and prepare the files.**
 
