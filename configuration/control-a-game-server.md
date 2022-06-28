@@ -13,7 +13,8 @@ Go to the folder, create a file and give the webserver the correct permissions f
 ```
 cd </path/to/your/webapp>/html/server
 touch <ServerID>.php
-sudo chmod 640 <username>:<webserverusername>
+sudo chown <username>:<webserverusername> <ServerID>.php
+sudo chmod 640 <ServerID>.php
 ```
 
 **Now open the file and add all the lines and replace everything with your data.**
@@ -31,14 +32,9 @@ $sstop = "./vhserver stop"; // Command to stop the server
 $srestart = "./vhserver restart"; // Command to restart the server
 $sbackup = "./vhserver backup"; // Command to back up the server
 $supdate = "./vhserver update"; // Command to update the server
-
-// LOG \\
-$logtype = "path"; // Choose scp or path
-# $logpath = ""; // Remove the #, if you get the log from a log file (/var/log/remotelogs/vhserver-console.log)
-# $scpcommand = ""; // Remove the #, if you get the log with scp (cat log/console/vhserver-console.log)
 ```
 
-## See logs and live console (Will be in the next release)
+## See logs and live console&#x20;
 
 **There are three ways, how to retrieve the logs from your external game-server.**
 
