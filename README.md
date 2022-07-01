@@ -1,8 +1,7 @@
 ---
 description: >-
   With this web application, written in PHP, you can query multiple game servers
-  superfast and control your self-hosted game servers. You can also see the
-  historical player count and the uptime of the s
+  superfast and control your self-hosted game servers.
 ---
 
 # Home
