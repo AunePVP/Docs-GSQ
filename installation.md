@@ -20,7 +20,7 @@ bash <(curl -s https://raw.githubusercontent.com/AunePVP/Game-Server-Query-and-C
 ```
 
 Navigate with your arrow keys and press enter to submit. To focus `<Ok>` or `<Cancel>`, press tab.\
-After completing all steps, move to [Web configuration.](https://github.com/AunePVP/Game-Server-Query-and-Control-Center/wiki/Installation#web-configuration)
+After completing all steps, move to Web configuration.
 {% endtab %}
 
 {% tab title="Manual Installation Guide" %}
@@ -104,7 +104,7 @@ Create a table for the login/registration
 
 ```sql
 USE <DBName>;
-CREATE TABLE users (id INT auto_increment PRIMARY KEY AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100) NOT NULL, server JSON NOT NULL);
+CREATE TABLE users (id INT auto_increment PRIMARY KEY AUTO_INCREMENT, username VARCHAR(100) NOT NULL, password VARCHAR(100) NOT NULL, server JSON NOT NULL, sprite VARCHAR(25) NOT NULL, seed VARCHAR(100) NOT NULL);
 ```
 
 Exit mysql
